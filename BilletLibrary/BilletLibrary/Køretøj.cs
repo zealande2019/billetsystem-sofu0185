@@ -6,10 +6,21 @@ namespace BilletLibrary
 {
     public abstract class Køretøj
     {
+        private string _nummerplade;
+
         /// <summary>
-        /// Køretøjets nummerplade
+        /// Køretøjets _nummerplade
         /// </summary>
-        public string Nummerplade { get; set; }
+        public string Nummerplade
+        {
+            get => _nummerplade;
+            set
+            {
+                if (value.Length > 7)
+                    throw new ArgumentException("Nummerplade kan ikke være længere end 7 tegn.");
+                _nummerplade = value;
+            }
+        }
         /// <summary>
         /// Hvornår køretøjet kørte over broen
         /// </summary>
