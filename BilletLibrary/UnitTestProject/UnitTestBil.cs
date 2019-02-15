@@ -30,7 +30,7 @@ namespace UnitTestProject
             string actual = "";
 
             //Act
-            actual = b.Køretøj();
+            actual = b.KøretøjType();
 
             //Assert
             Assert.AreEqual(expected, actual);

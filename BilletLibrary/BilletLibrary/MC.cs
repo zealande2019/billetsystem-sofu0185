@@ -4,26 +4,17 @@ using System.Text;
 
 namespace BilletLibrary
 {
-    public class MC
+    public class MC : Køretøj
     {
-        /// <summary>
-        /// Motercyklens nummerplade
-        /// </summary>
-        public string Nummerplade { get; set; }
-        /// <summary>
-        /// Hvornår motercyklen kørte over broen
-        /// </summary>
-        public DateTime Dato { get; set; }
-
         /// <summary>
         /// Prisen for at krydse broen
         /// </summary>
         /// <returns></returns>
-        public decimal Pris() => 125;
+        public override decimal Pris() => 125;
         /// <summary>
         /// Retunere køretøjets type
         /// </summary>
         /// <returns></returns>
-        public string Køretøj() => "MC";
+        public override string KøretøjType() => "MC";
     }
 }
