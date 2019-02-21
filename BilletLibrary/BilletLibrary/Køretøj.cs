@@ -48,19 +48,19 @@ namespace BilletLibrary
         /// </summary>
         /// <param name="hasBrobizz">Indikerer om køretøjet har en brobizz</param>
         /// <returns></returns>
-        public decimal Pris(bool hasBrobizz = false)
+        public virtual decimal Pris(bool hasBrobizz = false)
         {
             decimal rabat = 0;
             if (hasBrobizz)
-                rabat = SpecifikPris() * 0.05M;
-            return SpecifikPris() - rabat;
+                rabat = NormalPris() * 0.05M;
+            return NormalPris() - rabat;
         }
 
         /// <summary>
         /// Køretøjets specifike pris for at krydse broen
         /// </summary>
         /// <returns></returns>
-        protected abstract decimal SpecifikPris();
+        protected abstract decimal NormalPris();
         /// <summary>
         /// Retunere køretøjets type
         /// </summary>

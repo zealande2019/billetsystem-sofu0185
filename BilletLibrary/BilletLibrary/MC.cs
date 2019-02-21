@@ -23,7 +23,7 @@ namespace BilletLibrary
         /// Prisen for at krydse broen
         /// </summary>
         /// <returns></returns>
-        protected override decimal SpecifikPris() => 125;
+        protected override decimal NormalPris() => 125;
         /// <summary>
         /// Retunere køretøjets type
         /// </summary>

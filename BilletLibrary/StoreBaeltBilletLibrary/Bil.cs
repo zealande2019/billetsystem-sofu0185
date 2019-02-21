@@ -18,7 +18,7 @@ namespace StoreBaeltBilletLibrary
         /// Prisen for at krydse broen, 20% rabat hvis der er weekend
         /// </summary>
         /// <returns></returns>
-        protected override decimal SpecifikPris()
+        protected override decimal NormalPris()
         {
             bool skalHaveRabat;
             switch (this.Dato.DayOfWeek)
@@ -32,7 +32,7 @@ namespace StoreBaeltBilletLibrary
                     break;
             }
             
-            decimal pris = base.SpecifikPris();
+            decimal pris = base.NormalPris();
             if (skalHaveRabat)
                 pris -= pris * 0.20M;
             return pris;

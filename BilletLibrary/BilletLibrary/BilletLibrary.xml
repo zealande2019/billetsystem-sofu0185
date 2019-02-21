@@ -19,7 +19,7 @@
             Initialiserer et nyt instans af <see cref="T:BilletLibrary.Bil"/> klassen med en nummerplade og en dato
             </summary>
         </member>
-        <member name="M:BilletLibrary.Bil.SpecifikPris">
+        <member name="M:BilletLibrary.Bil.NormalPris">
             <summary>
             Prisen for at krydse broen
             </summary>
@@ -63,7 +63,7 @@
             <param name="hasBrobizz">Indikerer om køretøjet har en brobizz</param>
             <returns></returns>
         </member>
-        <member name="M:BilletLibrary.Køretøj.SpecifikPris">
+        <member name="M:BilletLibrary.Køretøj.NormalPris">
             <summary>
             Køretøjets specifike pris for at krydse broen
             </summary>
@@ -90,7 +90,7 @@
             Initialiserer et nyt instans af <see cref="T:BilletLibrary.MC"/> klassen med en nummerplade og en dato
             </summary>
         </member>
-        <member name="M:BilletLibrary.MC.SpecifikPris">
+        <member name="M:BilletLibrary.MC.NormalPris">
             <summary>
             Prisen for at krydse broen
             </summary>
