@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BilletLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:BilletLibrary.Bil">
+            <summary>
+            Repræsentere en basal bil i systemet
+            </summary>
+        </member>
+        <member name="M:BilletLibrary.Bil.SpecifikPris">
+            <summary>
+            Prisen for at krydse broen
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BilletLibrary.Bil.KøretøjType">
+            <summary>
+            Retunere køretøjets type
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:BilletLibrary.Køretøj.Nummerplade">
+            <summary>
+            Køretøjets _nummerplade
+            </summary>
+        </member>
+        <member name="P:BilletLibrary.Køretøj.Dato">
+            <summary>
+            Hvornår køretøjet kørte over broen
+            </summary>
+        </member>
+        <member name="M:BilletLibrary.Køretøj.Pris(System.Boolean)">
+            <summary>
+            Prisen for hvor meget det koster at krydse broen
+            </summary>
+            <param name="hasBrobizz">Indikerer om køretøjet har en brobizz</param>
+            <returns></returns>
+        </member>
+        <member name="M:BilletLibrary.Køretøj.SpecifikPris">
+            <summary>
+            Køretøjets specifike pris for at krydse broen
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BilletLibrary.Køretøj.KøretøjType">
+            <summary>
+            Retunere køretøjets type
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BilletLibrary.MC.SpecifikPris">
+            <summary>
+            Prisen for at krydse broen
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BilletLibrary.MC.KøretøjType">
+            <summary>
+            Retunere køretøjets type
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -4,9 +4,26 @@ using System.Text;
 
 namespace BilletLibrary
 {
+    /// <summary>
+    /// Repræsentere et generalt køretøj som kryder en bro
+    /// </summary>
     public abstract class Køretøj
     {
         private string _nummerplade;
+
+        /// <summary>
+        /// Initialiserer et nyt instans af <see cref="Køretøj"/> klassen
+        /// </summary>
+        public Køretøj() {}
+
+        /// <summary>
+        /// Initialiserer et nyt instans af <see cref="Køretøj"/> klassen med en nummerplade og en dato
+        /// </summary>
+        public Køretøj(string nummerplade, DateTime dato)
+        {
+            Nummerplade = nummerplade;
+            Dato = dato;
+        }
 
         /// <summary>
         /// Køretøjets _nummerplade
