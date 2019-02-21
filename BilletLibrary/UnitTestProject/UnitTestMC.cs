@@ -35,5 +35,35 @@ namespace UnitTestProject
             //Assert
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void Pris_HarBrobizz_For5ProcentRabat()
+        {
+            //Arrange
+            MC b = new MC();
+            decimal expected = 118.75M;
+            decimal actual = 0M;
+
+            //Act
+            actual = b.Pris(true);
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+
+        }
+
+        [TestMethod]
+        public void Pris_HarIkkeBrobizz_ForIkke5ProcentRabat()
+        {
+            //Arrange
+            MC b = new MC();
+            decimal expected = 125M;
+            decimal actual = 0M;
+
+            //Act
+            actual = b.Pris(false);
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

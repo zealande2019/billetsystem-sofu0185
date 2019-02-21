@@ -27,10 +27,23 @@ namespace BilletLibrary
         public DateTime Dato { get; set; }
 
         /// <summary>
-        /// Prisen for at krydse broen
+        /// Prisen for hvor meget det koster at krydse broen
+        /// </summary>
+        /// <param name="hasBrobizz">Indikerer om køretøjet har en brobizz</param>
+        /// <returns></returns>
+        public decimal Pris(bool hasBrobizz = false)
+        {
+            decimal rabat = 0;
+            if (hasBrobizz)
+                rabat = SpecifikPris() * 0.05M;
+            return SpecifikPris() - rabat;
+        }
+
+        /// <summary>
+        /// Køretøjets specifike pris for at krydse broen
         /// </summary>
         /// <returns></returns>
-        public abstract decimal Pris();
+        protected abstract decimal SpecifikPris();
         /// <summary>
         /// Retunere køretøjets type
         /// </summary>

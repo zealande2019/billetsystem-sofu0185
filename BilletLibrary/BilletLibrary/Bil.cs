@@ -11,7 +11,7 @@ namespace BilletLibrary
         /// Prisen for at krydse broen
         /// </summary>
         /// <returns></returns>
-        public override decimal Pris() => 240;
+        protected override decimal SpecifikPris() => 240;
         /// <summary>
         /// Retunere køretøjets type
         /// </summary>
