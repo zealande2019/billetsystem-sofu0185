@@ -19,7 +19,7 @@ namespace OeresundBilletLibrary
         /// </summary>
         /// <param name="hasBrobizz">Indikerer om køretøjet har en brobizz</param>
         /// <returns></returns>
-        public override decimal Pris(bool hasBrobizz = false) => hasBrobizz ? 161 : NormalPris();
+        public override decimal Pris() => HasBrobizz ? 161 : NormalPris();
 
         /// <summary>
         /// Normal prisen for at krydse broen
