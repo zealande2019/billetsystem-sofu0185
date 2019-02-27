@@ -36,6 +36,11 @@
             Repræsentere et generalt køretøj som kryder en bro
             </summary>
         </member>
+        <member name="P:BilletLibrary.Køretøj.HasBrobizz">
+            <summary>
+            Indikerer om køretøjet har en brobizz
+            </summary>
+        </member>
         <member name="M:BilletLibrary.Køretøj.#ctor">
             <summary>
             Initialiserer et nyt instans af <see cref="T:BilletLibrary.Køretøj"/> klassen
@@ -56,11 +61,10 @@
             Hvornår køretøjet kørte over broen
             </summary>
         </member>
-        <member name="M:BilletLibrary.Køretøj.Pris(System.Boolean)">
+        <member name="M:BilletLibrary.Køretøj.Pris">
             <summary>
             Prisen for hvor meget det koster at krydse broen
             </summary>
-            <param name="hasBrobizz">Indikerer om køretøjet har en brobizz</param>
             <returns></returns>
         </member>
         <member name="M:BilletLibrary.Køretøj.NormalPris">

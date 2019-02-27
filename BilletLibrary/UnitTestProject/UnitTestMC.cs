@@ -39,12 +39,13 @@ namespace UnitTestProject
         public void Pris_HarBrobizz_For5ProcentRabat()
         {
             //Arrange
-            MC b = new MC();
+            MC mc = new MC();
+            mc.HasBrobizz = true;
             decimal expected = 118.75M;
             decimal actual = 0M;
 
             //Act
-            actual = b.Pris(true);
+            actual = mc.Pris();
 
             //Assert
             Assert.AreEqual(expected, actual);
@@ -55,12 +56,13 @@ namespace UnitTestProject
         public void Pris_HarIkkeBrobizz_ForIkke5ProcentRabat()
         {
             //Arrange
-            MC b = new MC();
+            MC mc = new MC();
+            mc.HasBrobizz = false;
             decimal expected = 125M;
             decimal actual = 0M;
 
             //Act
-            actual = b.Pris(false);
+            actual = mc.Pris();
 
             //Assert
             Assert.AreEqual(expected, actual);

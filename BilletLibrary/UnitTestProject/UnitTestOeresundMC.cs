@@ -26,11 +26,12 @@ namespace UnitTestProject
         {
             //Arrange
             MC mc = new MC();
+            mc.HasBrobizz = true;
             decimal expected = 73;
             decimal actual = 0;
 
             //Act
-            actual = mc.Pris(true);
+            actual = mc.Pris();
 
             //Assert
             Assert.AreEqual(expected, actual);

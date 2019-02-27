@@ -40,11 +40,12 @@ namespace UnitTestProject
         {
             //Arrange
             Bil b = new Bil();
+            b.HasBrobizz = true;
             decimal expected = 228M;
             decimal actual = 0M;
 
             //Act
-            actual = b.Pris(true);
+            actual = b.Pris();
 
             //Assert
             Assert.AreEqual(expected, actual);
@@ -56,11 +57,12 @@ namespace UnitTestProject
         {
             //Arrange
             Bil b = new Bil();
+            b.HasBrobizz = false;
             decimal expected = 240M;
             decimal actual = 0M;
 
             //Act
-            actual = b.Pris(false);
+            actual = b.Pris();
 
             //Assert
             Assert.AreEqual(expected, actual);

@@ -11,6 +11,9 @@ namespace BilletLibrary
     {
         private string _nummerplade;
 
+        /// <summary>
+        /// Indikerer om køretøjet har en brobizz
+        /// </summary>
         public bool HasBrobizz { get; set; }
 
         /// <summary>
@@ -48,7 +51,6 @@ namespace BilletLibrary
         /// <summary>
         /// Prisen for hvor meget det koster at krydse broen
         /// </summary>
-        /// <param name="hasBrobizz">Indikerer om køretøjet har en brobizz</param>
         /// <returns></returns>
         public virtual decimal Pris()
         {
