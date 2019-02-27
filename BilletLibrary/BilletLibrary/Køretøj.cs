@@ -11,6 +11,8 @@ namespace BilletLibrary
     {
         private string _nummerplade;
 
+        public bool HasBrobizz { get; set; }
+
         /// <summary>
         /// Initialiserer et nyt instans af <see cref="Køretøj"/> klassen
         /// </summary>
@@ -48,10 +50,10 @@ namespace BilletLibrary
         /// </summary>
         /// <param name="hasBrobizz">Indikerer om køretøjet har en brobizz</param>
         /// <returns></returns>
-        public virtual decimal Pris(bool hasBrobizz = false)
+        public virtual decimal Pris()
         {
             decimal rabat = 0;
-            if (hasBrobizz)
+            if (HasBrobizz)
                 rabat = NormalPris() * 0.05M;
             return NormalPris() - rabat;
         }
