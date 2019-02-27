@@ -16,7 +16,10 @@ namespace BilletLibrary
         /// </summary>
         public bool HasBrobizz { get; set; }
 
-
+        /// <summary>
+        /// Initialiserer et nyt instans af <see cref="Køretøj"/> klassen
+        /// </summary>
+        public Køretøj() {}
 
         /// <summary>
         /// Initialiserer et nyt instans af <see cref="Køretøj"/> klassen med en nummerplade og en dato
